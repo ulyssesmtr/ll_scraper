@@ -1,0 +1,14 @@
+version: "3.6"
+
+services:
+  linked_list:
+    build:
+      context: ./linked_list
+      dockerfile: Dockerfile
+    restart: always
+
+  scraper:
+    build:
+      context: ./scraper
+      dockerfile: Dockerfile
+    restart: always
